@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/arnoldxu/MvcMovie
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/arnoldxu/MvcMovie/Views/ Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvIEFjY291bnQvUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/arnoldxu/MvcMovie/Views/HelloWorld/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSGVsbG9Xb3JsZC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

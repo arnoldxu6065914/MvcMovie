@@ -277,3 +277,4 @@
 /Users/arnoldxu/MvcMovie/obj/Debug/net8.0/MvcMovie.csproj.Up2Date
 /Users/arnoldxu/MvcMovie/bin/Debug/net8.0/package-lock.json
 /Users/arnoldxu/MvcMovie/bin/Debug/net8.0/package.json
+/Users/arnoldxu/MvcMovie/obj/Debug/net8.0/MvcMovie.sourcelink.json
