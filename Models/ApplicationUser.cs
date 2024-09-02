@@ -1,14 +1,16 @@
 using System.ComponentModel.DataAnnotations;
+using MvcMovie.Models;
+
 namespace MvcMovie.Models;
 
 public class ApplicationUser
 {
     public int Id { get; set; }
     [Required] 
-    public string Username { get; set; } = string.Empty;
+    public required string Username { get; set; } 
     [Required] 
-    public string Password { get; set; } = string.Empty;
+    public required string Password { get; set; } 
     [Required] 
-    public string Email { get; set; } = string.Empty;
+    public required string Email { get; set; }
 }
 
