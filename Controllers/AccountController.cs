@@ -35,6 +35,7 @@ namespace MvcMovie.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Login(ApplicationUser model)
         {
@@ -73,7 +74,7 @@ namespace MvcMovie.Controllers
                 //     return RedirectToAction("Index", "Home");
                 // }
 
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                ModelState.AddModelError(string.Empty, "Invalid login attempt，请检查用户名和密码.");
             }
 
             return View(model);
@@ -95,7 +96,7 @@ namespace MvcMovie.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Logout()
+        public IActionResult Logout()
         {
             //await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             HttpContext.Session.Clear();

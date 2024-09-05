@@ -14,7 +14,6 @@ using System.Threading.Tasks;
 
 namespace MvcMovie.Controllers
 {
-    [Authorize]
     public class MoviesController : Controller
     {
         private readonly MvcMovieContext _context;
@@ -27,6 +26,13 @@ namespace MvcMovie.Controllers
         // GET: Movies
     public async Task<IActionResult> Index(string movieGenre, string searchString)
     {
+        // 检查用户是否已登录
+        var username = HttpContext.Session.GetString("Username");
+        if (string.IsNullOrEmpty(username))
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
         if (_context.Movie == null)
         {
             return Problem("Entity set 'MvcMovieContext.Movie'  is null.");

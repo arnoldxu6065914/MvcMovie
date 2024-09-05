@@ -37,7 +37,7 @@
             <a class="navbar-brand" asp-controller="Home" asp-action="Index">Home</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    @if (User.Identity.IsAuthenticated)
+                    @if (User.Identity != null && User.Identity.IsAuthenticated)
                     {
                         <li class="nav-item">
                             <form asp-controller="Account" asp-action="Logout" method="post" class="form-inline">

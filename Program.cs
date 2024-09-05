@@ -21,7 +21,7 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true; 
 });
-
+//builder.Services.AddAuthorization();
 //builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
 //    .AddCookie(options =>
 //    {
@@ -51,12 +51,12 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+// app.UseAuthentication();
+// app.UseAuthorization();
+
 app.UseRouting();
 
 app.UseSession();
-
-//app.UseAuthentication();
-//app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
