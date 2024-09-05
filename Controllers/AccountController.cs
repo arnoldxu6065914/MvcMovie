@@ -103,16 +103,39 @@ namespace MvcMovie.Controllers
             return RedirectToAction("Index", "Home");
         }
   
+        // 显示注册页面
         public IActionResult Register()
         {
-            var model = new ApplicationUser
-            {
-                Username = "Arnold",
-                Password = "699869",
-                Email = "arnoldxyx2012@gmail.com"
-            };
-            return View("Register", model);
+            return View();
         }
 
+        // 处理注册提交
+        [HttpPost]
+        public async Task<IActionResult> Register(ApplicationUser model)
+        {
+            if (ModelState.IsValid)
+            {
+                // 检查用户名是否已存在
+                var existingUser = await _context.Users
+                    .FirstOrDefaultAsync(u => u.Username == model.Username);
+            
+                if (existingUser != null)
+                {
+                // 用户名已存在，返回错误
+                    ModelState.AddModelError(string.Empty, "用户名已存在，请选择其他用户名。");
+                    return View(model);
+                }
+
+                // 保存新用户到数据库
+                _context.Users.Add(model);
+                await _context.SaveChangesAsync();
+
+                // 注册成功后，直接登录用户
+                HttpContext.Session.SetString("Username", model.Username);
+                return RedirectToAction("Index", "Home"); // 重定向到主页
+            }
+
+            return View(model); // 如果输入无效，返回注册页面
+        }
     }
 }
