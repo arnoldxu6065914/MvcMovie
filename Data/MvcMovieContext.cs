@@ -14,6 +14,10 @@ namespace MvcMovie.Data
         {
         }
 
+        // Movie 数据表
         public DbSet<MvcMovie.Models.Movie> Movie { get; set; } = default!;
+        // ApplicationUser 数据表
+        public DbSet<ApplicationUser> Users { get; set; } = default!;  // 添加用户表
+    
     }
 }
