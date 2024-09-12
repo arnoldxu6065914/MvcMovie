@@ -4,9 +4,41 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome to MvcMovie!</h1>
-    <img src="~/images/sub6400-comp-frm-v0220.1387-r.webp" alt="dead pool" class="layui-nav-img" style="height:270px;" />
-    <p>请先登录或注册以继续。</p>
-    <a class="btn btn-primary" href="/Account/Login">登录</a>
-    <a class="btn btn-secondary" href="/Account/Register">注册</a>
+
+    <!-- 图片轮播 -->
+    <div class="layui-carousel" id="movie-carousel" style="width: 100%; margin: 20px auto;">
+        <div carousel-item>
+            <div>
+                <img src="~/images/sub6400-comp-frm-v0220.1387-r.webp" alt="Deadpool" class="layui-nav-img" style="height: 270px;">
+            </div>
+            <div>
+                <img src="~/images/despicable-me.jpg" alt="Minions" class="layui-nav-img" style="height: 270px;">
+            </div>
+            <div>
+                <img src="~/images/spiderman.jpg" alt="spiderman" class="layui-nav-img" style="height: 270px;">
+            </div>
+            <div>
+                <img src="~/images/truman.jpg" alt="The Truman Show" class="layui-nav-img" style="height: 270px;">
+            </div>
+        </div>
+    </div>
+
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+
+<!-- Layui Carousel 初始化脚本 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/layui/2.7.2/layui.js"></script>
+<script>
+layui.use('carousel', function(){
+    var carousel = layui.carousel;
+    // 初始化轮播
+    carousel.render({
+        elem: '#movie-carousel',
+        width: '600px', // 轮播的宽度
+        height: '270px', // 轮播的高度
+        interval: 3000, // 切换的时间间隔，单位毫秒
+        arrow: 'hover', // 鼠标悬停时显示箭头
+        anim: 'fade' // 切换的动画类型
+    });
+});
+</script>
