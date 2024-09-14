@@ -17,12 +17,24 @@
       "PackagePath": "staticwebassets/images/deadpool-wolverine-b7ee6365.webp"
     },
     {
+      "Id": "/Users/arnoldxu/MvcMovie/wwwroot/images/despicable-me.jpg",
+      "PackagePath": "staticwebassets/images/despicable-me.jpg"
+    },
+    {
       "Id": "/Users/arnoldxu/MvcMovie/wwwroot/images/logo.webp",
       "PackagePath": "staticwebassets/images/logo.webp"
     },
     {
+      "Id": "/Users/arnoldxu/MvcMovie/wwwroot/images/spiderman.jpg",
+      "PackagePath": "staticwebassets/images/spiderman.jpg"
+    },
+    {
       "Id": "/Users/arnoldxu/MvcMovie/wwwroot/images/sub6400-comp-frm-v0220.1387-r.webp",
       "PackagePath": "staticwebassets/images/sub6400-comp-frm-v0220.1387-r.webp"
+    },
+    {
+      "Id": "/Users/arnoldxu/MvcMovie/wwwroot/images/truman.jpg",
+      "PackagePath": "staticwebassets/images/truman.jpg"
     },
     {
       "Id": "/Users/arnoldxu/MvcMovie/wwwroot/js/site.js",

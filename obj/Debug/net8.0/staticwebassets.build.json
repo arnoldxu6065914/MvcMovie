@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f+UrMuU/Pq6A+n4byI7DAIm5WJ0Wo39/WHd+tRRMD/o=",
+  "Hash": "9C2lJSnxd9Z5pTqcsrkZnAFOthyoeL+jNNuxspYKc74=",
   "Source": "MvcMovie",
   "BasePath": "_content/MvcMovie",
   "Mode": "Default",
@@ -112,6 +112,25 @@
       "OriginalItemSpec": "wwwroot/images/deadpool-wolverine-b7ee6365.webp"
     },
     {
+      "Identity": "/Users/arnoldxu/MvcMovie/wwwroot/images/despicable-me.jpg",
+      "SourceId": "MvcMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/arnoldxu/MvcMovie/wwwroot/",
+      "BasePath": "_content/MvcMovie",
+      "RelativePath": "images/despicable-me.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/despicable-me.jpg"
+    },
+    {
       "Identity": "/Users/arnoldxu/MvcMovie/wwwroot/images/logo.webp",
       "SourceId": "MvcMovie",
       "SourceType": "Discovered",
@@ -131,6 +150,25 @@
       "OriginalItemSpec": "wwwroot/images/logo.webp"
     },
     {
+      "Identity": "/Users/arnoldxu/MvcMovie/wwwroot/images/spiderman.jpg",
+      "SourceId": "MvcMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/arnoldxu/MvcMovie/wwwroot/",
+      "BasePath": "_content/MvcMovie",
+      "RelativePath": "images/spiderman.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/spiderman.jpg"
+    },
+    {
       "Identity": "/Users/arnoldxu/MvcMovie/wwwroot/images/sub6400-comp-frm-v0220.1387-r.webp",
       "SourceId": "MvcMovie",
       "SourceType": "Discovered",
@@ -148,6 +186,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/sub6400-comp-frm-v0220.1387-r.webp"
+    },
+    {
+      "Identity": "/Users/arnoldxu/MvcMovie/wwwroot/images/truman.jpg",
+      "SourceId": "MvcMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/arnoldxu/MvcMovie/wwwroot/",
+      "BasePath": "_content/MvcMovie",
+      "RelativePath": "images/truman.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/truman.jpg"
     },
     {
       "Identity": "/Users/arnoldxu/MvcMovie/wwwroot/js/site.js",
